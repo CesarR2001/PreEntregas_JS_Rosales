@@ -82,6 +82,15 @@ const filtrarPorGama = (gama) => {
 const filtrarPorTipo = (tipo) => {
     return audiculares.filter((audiculares)=> audiculares.tipo === tipo);
 }
+// 👇 FUNCIONALIDAD PARA DEVOLVER UN PRODUCTO EN PARTICULAR
+// Funciones de búsqueda
+const verAudicular = (marca) => {
+    return audiculares.find(audicular => audicular.marca.toUpperCase() === marca.toUpperCase());
+}
+
+const verCelular = (marca) => {
+    return celulares.find(celular => celular.marca.toUpperCase() === marca.toUpperCase());
+}
 
 const encargado = usuarios[0]; // Acceso correcto al primer usuario
 let consulta = prompt( "Desea cargar los productos nuevos?").toUpperCase();
@@ -140,20 +149,7 @@ while (consulta === "SI")
 
     // BUSQUEDA DE PRODUCTOS
 
-
 let buscar= prompt("Desea buscar un producto en particular?").toUpperCase();
-// 👇 FUNCIONALIDAD PARA DEVOLVER UN PRODUCTO EN PARTICULAR
-
-// Funciones de búsqueda
-const verAudicular = (marca) => {
-    return audiculares.find(audicular => audicular.marca.toUpperCase() === marca.toUpperCase());
-}
-
-const verCelular = (marca) => {
-    return celulares.find(celular => celular.marca.toUpperCase() === marca.toUpperCase());
-}
-
-
 
     while (buscar === "SI") {
         let productoEspecifico;
