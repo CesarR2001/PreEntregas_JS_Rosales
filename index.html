@@ -3,11 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Encuentra los últimos modelos de celulares y accesorios Samsung, iPhone y Xiaomi en nuestra tienda online. Envíos rápidos y precios competitivos.">
+    <meta name="keywords" content="comprar celulares online, Samsung, iPhone, Xiaomi, tienda de móviles, smartphones baratos, compra audífonos online, audífonos inalámbricos, cancelación de ruido, audífonos Bluetooth, tienda de auriculares">
+    <title>CellCity</title>
+    
+    <!-- Link del css de bootstrap en mi proyecto -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <header> <!--Recordatorio: Buscar la forma de poder pisar los estilos de bootstrap con los de la pagina-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid"><!--Buscar un psoble logo para la tienda y ponerlo en el nav-->
+                <a class="navbar-brand" href="/index.html">CellCity</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/login.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/celulares.html">Celulares</a></li>
+                        <li><a class="dropdown-item" href="./pages/audiculares.html">Audiculares</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+    </header>
     
-    <!--<script src="./index.js"></script> -->
-    <script src="./prueba.js"></script>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active" >
+                <img src="./assets/images/istockphoto-1252670107-1024x1024.jpg" class="d-block w-100" alt="Foto de portada 1 ">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/pexels-ahmed-akeri-801514718-19936699.jpg" class="d-block w-100" alt="Foto de portada 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/pexels-ahmed-akeri-801514718-19936701.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+            <!-- Contenedor del título y subtítulo -->
+        <div class="titulo_subtitulo">
+            <h2>CellCity</h2>
+            <p>Donde encontraras tu celular y accesorios que buscas al mejor precio</p>
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    <section class="product__section"> <!--Seccion de celulares-->
+        <h2>Celulares</h2>
+        <div class="product__grilla"> 
+            <div class="product__container">
+                <h3>Producto 1</h3>
+                <img src="./assets/images/iphone.jpg" alt="celular_samsung">
+                <p>Descripción breve del producto 1.</p>
+            </div>
+            <div class="product__container">
+                <h3>Producto 2</h3>
+                <img src="./assets/images/iPhone!4Promax.jpg" alt="iPhone14Promax">
+                <p>Descripción breve del producto 2.</p>
+            </div>
+            <div class="product__container">
+                <h3>Producto 3</h3>
+                <img src="./assets/images/pexels-coppertist-wu-313365563-16003887.jpg" alt="Iphone">
+                <p>Descripción breve del producto 3.</p>
+            </div>
+            <div class="product__container">
+                <h3>Producto 1</h3>
+                <img src="./assets/images/iphone.jpg" alt="celular_samsung">
+                <p>Descripción breve del producto 1.</p>
+            </div>
+            <div class="product__container">
+                <h3>Producto 2</h3>
+                <img src="./assets/images/iPhone!4Promax.jpg" alt="iPhone14Promax">
+                <p>Descripción breve del producto 2.</p>
+            </div>
+            <div class="product__container">
+                <h3>Producto 3</h3>
+                <img src="./assets/images/pexels-coppertist-wu-313365563-16003887.jpg" alt="Iphone">
+                <p>Descripción breve del producto 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product__section">  
+        <h2>Audiculares</h2>
+        <div class="product__grilla"> 
+            <div class="product__container">
+                <h3>Producto 1</h3>
+                <img src="./assets/images/pexels-garrettmorrow-1649771.jpg" alt="audicular1">
+                <p>Descripción breve del producto 1.</p>
+            </div>
+            <div class="product__container">
+                <h3>Producto 2</h3>
+                <img src="./assets/images/pexels-moose-photos-170195-1037992.jpg" alt="audicular2">
+                <p>Descripción breve del producto 2.</p>
+            </div>
+            <div class="product__container">
+                <h3>Producto 3</h3>
+                <img src="./assets/images/pexels-chuck-3587496.jpg" alt="audicular3">
+                <p>Descripción breve del producto 3.</p>
+            </div>
+            <div class="product__container">
+                <h3>Producto 1</h3>
+                <img src="./assets/images/pexels-garrettmorrow-1649771.jpg" alt="audicular1">
+                <p>Descripción breve del producto 1.</p>
+            </div>
+            <div class="product__container">
+                <h3>Producto 2</h3>
+                <img src="./assets/images/pexels-moose-photos-170195-1037992.jpg" alt="audicular2">
+                <p>Descripción breve del producto 2.</p>
+            </div>
+            <div class="product__container">
+                <h3>Producto 3</h3>
+                <img src="./assets/images/pexels-chuck-3587496.jpg" alt="audicular3">
+                <p>Descripción breve del producto 3.</p>
+            </div>
+        </div>    
+    </section>
+
+    <footer class="page__footer" id="footer">
+        <div class="page__footer__info">
+            <div>
+                <h5>Avenida de la Innovación 123, Local 45</h5>
+            </div>
+            <div>
+                <p>Correo Electrónico: info@cellcity.com</p>
+            </div>
+            <div>
+                <h5>Horario de Atención:</h5>
+                <p>Lunes - Viernes: 10:00 AM - 7:00 PM</p>
+                <p>Sábados: 10:00 AM - 5:00 PM</p>
+
+            </div>
+        </div>
+        <div class="page__footer__social">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <img src="./assets/images/facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <img src="./assets/images/instagram.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://whatsapp.com" target="_blank" aria-label="Twitter">
+                <img src="./assets/images/whatsapp.png" alt="Twitter" class="social-icon">
+            </a>
+        </div>
+        <div class="page__footer__copyright">© 2024 Copyright: MyWebsite.com</div>
+    </footer>
+
+    <!-- script con el archivo JS de Boostrap en mi proyecto -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

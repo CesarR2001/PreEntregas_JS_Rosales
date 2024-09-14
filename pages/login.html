@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link del css de bootstrap en mi proyecto -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">CellCity</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./celulares.html">Celulares</a></li>
+                        <li><a class="dropdown-item" href="./audiculares.html">Audiculares</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="login-container">
+    <form action="" method="post" enctype="text/plain">
+        <!-- Aca debe estar todoslos imputs y buttom-->
+        <img src="../assets/images/user.png" alt="Login_imagen">
+
+        <label for="usuario"> Usuario</label> <!-- El for debe coincidir con el id para que pueda enlazarlo-->
+        <input type="text" name="usuario" id="usuario" placeholder="Ingrese su usuario">
+        
+        <label for="contraseña"> Contraseña</label>
+        <input type="password" name="contraseña" placeholder="Contraseña">
+
+        <input type="button" id ="buttom" value="Login" > <!--Deberia poder logearte y accerder con tu cuenta -->
+    </form>
+    </div>
+
+    <footer class="page__footer" id="footer">
+        <div class="page__footer__info">
+            <div>
+                <h5>Avenida de la Innovación 123, Local 45</h5>
+            </div>
+            <div>
+                <p>Correo Electrónico: info@cellcity.com</p>
+            </div>
+            <div>
+                <h5>Horario de Atención:</h5>
+                <p>Lunes - Viernes: 10:00 AM - 7:00 PM</p>
+                <p>Sábados: 10:00 AM - 5:00 PM</p>
+
+            </div>
+        </div>
+        <div class="page__footer__social">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <img src="../assets/images/facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <img src="../assets/images/instagram.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://whatsapp.com" target="_blank" aria-label="Twitter">
+                <img src="../assets/images/whatsapp.png" alt="Twitter" class="social-icon">
+            </a>
+        </div>
+        <div class="page__footer__copyright">© 2024 Copyright: MyWebsite.com</div>
+    </footer>
+
+    <!-- script con el archivo JS de Boostrap en mi proyecto -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

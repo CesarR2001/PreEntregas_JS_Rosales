@@ -1,0 +1,358 @@
+@charset "UTF-8";
+/* Fondo semitransparente */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.carousel-item img {
+  height: 800px; /* Ajusta el valor según tus necesidades */
+  object-fit: cover; /* Asegura que la imagen cubra completamente el espacio asignado sin deformarse */
+}
+
+/* Estilo para el contenedor de título y subtítulo */
+.titulo_subtitulo {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  padding: 10px;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.product__section {
+  padding: 10px;
+  text-align: center;
+  margin: 2% auto 2%;
+}
+.product__section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product__grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.product__grilla .product__container {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.product__grilla .product__container img {
+  max-width: 100%;
+  height: 35dvh;
+  border-bottom: 1px solid #ddd;
+}
+.product__grilla .product__container h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.product__grilla .product__container p {
+  margin: 5px 0;
+  color: #555;
+}
+.product__grilla .product__container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nosotros__section {
+  text-align: center;
+  margin: 2% auto 2%;
+}
+
+.nosotros__grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.8392156863);
+  border-radius: 10px;
+  padding: 2%;
+  text-align: center;
+  width: auto;
+}
+.login-container img {
+  width: 30%;
+  margin: 50px auto 50px; /* Centra la imagen y agrega margen inferior */
+  display: block; /* Para centrar correctamente en todos los navegadores */
+}
+.login-container input {
+  width: 45%; /* Ajusta el ancho del campo de entrada */
+  padding: 10px;
+  margin: 10px auto 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+}
+.login-container label {
+  font-size: 20px;
+  font-weight: normal;
+  display: block;
+}
+
+.page__footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 50px 0 30px;
+  margin-top: 40px;
+  text-align: center;
+  border-top: 1px solid #e9ecef; /* Línea de separación en la parte superior */
+  /* Estilos para los íconos de redes sociales */
+}
+.page__footer .page__footer__info {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.page__footer .page__footer__info div {
+  margin-bottom: 10px;
+}
+.page__footer .page__footer__social {
+  margin-bottom: 15px;
+}
+.page__footer .page__footer__social a {
+  margin: 0 10px;
+  display: inline-block;
+}
+.page__footer .page__footer__social .social-icon {
+  width: 24px; /* Tamaño de los íconos */
+  height: auto; /* Mantiene la proporción */
+  transition: transform 0.3s ease;
+}
+.page__footer .page__footer__social .social-icon:hover {
+  transform: scale(1.1); /* Escala los íconos al pasar el ratón */
+}
+.page__footer .page__footer__copyright {
+  color: #666;
+  padding: 25px 0;
+  font-size: 14px;
+}
+
+.container__venta {
+  display: flex;
+  flex-direction: column; /* Alinea el contenido en una columna */
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido */
+  height: 60vh; /* Ocupa toda la altura de la ventana gráfica */
+  position: relative; /* Permite que los elementos internos se posicionen relativos a este contenedor */
+}
+
+/* Asegúrate de que la imagen cubra todo el contenedor y se adapte al diseño */
+.container__venta img {
+  position: absolute; /* Permite que la imagen ocupe todo el contenedor */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionar */
+  z-index: -1; /* Asegura que la imagen esté detrás del texto */
+}
+
+/* Estilo para el texto centrado */
+.titulo_subtitulo {
+  text-align: center; /* Centra el texto dentro del contenedor */
+  color: #fff; /* Color del texto para que contraste con la imagen de fondo */
+  padding: 20px; /* Añade un poco de espacio alrededor del texto */
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+}
+
+/* ccs para la vista nosotros*/
+.container__nosotros {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.content {
+  display: flex;
+  margin: 1% auto 2%;
+  width: 90%;
+  text-align: center;
+  align-items: center;
+}
+.content .info {
+  width: 200%;
+}
+.content .info p {
+  margin: 5% 10% 5% 10%;
+  font-size: 20px;
+}
+.content .map img {
+  width: 90%;
+  border: 1px solid #fff;
+  margin: 20px;
+}
+
+#buttom {
+  width: 30%;
+  margin: 15px auto 20px;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+}
+
+/* Estilos para la tarjeta */
+.card {
+  width: 90%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilos para la cabecera de la tarjeta */
+.card-header {
+  position: relative;
+  overflow: hidden;
+  padding: 0%;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-header:hover .card-img {
+  transform: scale(1.4);
+}
+
+/* Estilos para el cuerpo de la tarjeta */
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Estilos para el pie de la tarjeta */
+.card-footer {
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-date {
+  color: #999;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+  .page__footer__info {
+    font-size: 12px; /* Tamaño de fuente aún más pequeño en pantallas muy pequeñas */
+  }
+  .page__footer__social .social-icon {
+    width: 18px; /* Tamaño de íconos aún más pequeño en pantallas muy pequeñas */
+  }
+}
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 600px; /* Ajusta el valor según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el espacio asignado sin deformarse */
+  }
+  .product__grilla {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .product__grilla img {
+    max-width: 100%;
+    height: 25dvh;
+    border-bottom: 1px solid #ddd;
+  }
+  .nosotros__grilla {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .content {
+    flex-direction: column-reverse;
+  }
+  .content .info {
+    width: 100%;
+  }
+  .content .info p {
+    margin: 5% 1% 5%;
+    font-size: 18px;
+  }
+  .content .map img {
+    width: 70%;
+    border: 1px solid #fff;
+    margin: 20px;
+  }
+  .page__footer__info {
+    font-size: 14px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+  .page__footer__social {
+    margin-bottom: 5px;
+  }
+  .page__footer__social .social-icon {
+    width: 20px; /* Tamaño de íconos más pequeño en pantallas pequeñas */
+    margin: 0px; /* Espacio reducido entre íconos */
+  }
+}
+@media (min-width: 768px) {
+  .container__venta {
+    display: flex;
+    flex-direction: column; /* Alinea el contenido en una columna */
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    height: 80vh; /* Ocupa toda la altura de la ventana gráfica */
+    position: relative; /* Permite que los elementos internos se posicionen relativos a este contenedor */
+  }
+}
+@media (min-width: 1200px) {
+  .product__grilla {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .container__venta {
+    height: 80vh; /* Ocupa toda la altura de la ventana gráfica */
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

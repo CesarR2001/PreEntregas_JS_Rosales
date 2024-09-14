@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">CellCity</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./celulares.html">Celulares</a></li>
+                        <li><a class="dropdown-item" href="./audiculares.html">Audiculares</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container__venta">
+        <img src="../assets/images/pexels-olly-901236.jpg" alt="Venta de audiculares">
+        <div class="titulo_subtitulo">
+            <h2>Auriculares de Alta Calidad</h2>
+            <p>Nuestros auriculares están diseñados para ofrecer una experiencia auditiva inigualable.</p>
+        </div>
+    </div>
+    
+    <!--Aca deberia hacer una grilla o una seccion 
+        donde se muestresn todlos los productos que tengo disponibles
+    pero por el momento puse una seccion con fotos de celulares -->
+
+        <section class="product__section"> <!--Seguido de una paginacion para poder ver todos los productos cargados-->
+            <h2> Audiculares</h2>
+            <div class="product__grilla">
+                <div class="product__container">
+                    <h3> Moto Buds 065</h3>
+                    <img src="../assets/images/Audi_moto.jpg" alt=" Moto Buds 065">
+                    <p>Auriculares Inalámbricos Motorola Moto Buds 065 Negro</p>
+                    <p>Precio: $35.999</p>
+                </div>
+                <div class="product__container">
+                    <h3>Philips SHL5005/00</h3>
+                    <img src="../assets/images/AudiPhilips.jpg" alt="Audicular Philips SHL5005/00">
+                    <p>Auriculares Philips SHL5005/00 Negros On Ear</p>
+                    <p>Precio: $22.499</p>
+                </div>
+                <div class="product__container">
+                    <h3>Audicular Gamer </h3>
+                    <img src="../assets/images/AudiGamer.jpg" alt="audicular1">
+                    <p>Auricular Gamer Logitech Rgb White</p>
+                    <p>Precio: $19.999</p>
+                </div>
+                <div class="product__container">
+                    <h3>Noga NG-bt469</h3>
+                    <img src="../assets/images/NogaBt469.jpg" alt="Audicular Noga NogaBt469">
+                    <p>Audicular Noga NG-BT469 Inalambricos</p>
+                    <p>Precio: $27.999</p>
+                </div>
+                <div class="product__container">
+                    <h3>Lavifree Bluetooth</h3>
+                    <img src="../assets/images/Audi_Inalambricos.jpg" alt="Audiculares Lavifree ">
+                    <p>Audicular Lavifree Inalambricos/Cable </p>
+                    <p>Precio: $19.999</p>
+                </div>
+                <div class="product__container">
+                    <h3>Noga Mic-119 </h3>
+                    <img src="../assets/images/Noga_mic.jpg" alt="Noga Mic-119">
+                    <p>Auriculares Headset Noga Mic-119</p>
+                    <p>Precio: $4.9999</p>
+                </div>
+            </div>
+        </section>
+
+            <!-- Deberia ir vinculado la grilla y la paguinacion a una base de datos para poder cargar todos los productos-->
+    <nav class="paginacion">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item">  <a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+    <footer class="page__footer" id="footer">
+        <div class="page__footer__info">
+            <div>
+                <h5>Avenida de la Innovación 123, Local 45</h5>
+            </div>
+            <div>
+                <p>Correo Electrónico: info@cellcity.com</p>
+            </div>
+            <div>
+                <h5>Horario de Atención:</h5>
+                <p>Lunes - Viernes: 10:00 AM - 7:00 PM</p>
+                <p>Sábados: 10:00 AM - 5:00 PM</p>
+
+            </div>
+        </div>
+        <div class="page__footer__social">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <img src="../assets/images/facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <img src="../assets/images/instagram.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://whatsapp.com" target="_blank" aria-label="Twitter">
+                <img src="../assets/images/whatsapp.png" alt="Twitter" class="social-icon">
+            </a>
+        </div>
+        <div class="page__footer__copyright">© 2024 Copyright: MyWebsite.com</div>
+    </footer>
+
+    <!-- script con el archivo JS de Boostrap en mi proyecto -->
+    <script src="../js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>

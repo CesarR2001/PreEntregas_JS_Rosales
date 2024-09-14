@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link del css de bootstrap en mi proyecto -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">CellCity</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./celulares.html">Celulares</a></li>
+                        <li><a class="dropdown-item" href="./audiculares.html">Audiculares</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container__venta"> <!--Ver con bootstrat mas adelante para que se adapte mejor-->
+        <img src="../assets/images/pexels-fauxels-3184306.jpg" alt="Venta de celulares">
+        <div class="titulo_subtitulo">
+            <h2>Celulares de Última Generación</h2>   <!--Este texto centrado en la pantalla -->
+            <p>Desde los últimos modelos de smartphones hasta los teléfonos más accesibles, en CellCity contamos con celulares de todas las marcas líderes.</p>
+        </div>
+    </div>
+    
+    <!--Aca deberia hacer una grilla dividia en 3 x 3 o una seccion 
+        donde se muestresn todlos los productos que tengo disponibles
+    pero por el momento puse una seccion con fotos de celulares -->
+
+
+    <section class="product__section"> <!--Seguido de una paginacion para poder ver todos los productos cargados-->
+        <h2>Celulares</h2>
+        <div class="product__grilla"> 
+            <div class="product__container">
+                <h3>Samsung Galaxy A15</h3>
+                <img src="../assets/images/GalaxyA15.jpg" alt="Samsung Galaxy A15">
+                <p>Galaxy A15 LTE 4GB 128GB Blue Black</p>
+                <p>Precio: $399.999</p>
+            </div>
+            <div class="product__container">
+                <h3>Motorola Moto G24</h3>
+                <img src="../assets/images/MotoG24.jpg" alt="Motorola G24">
+                <p>Motorola G24 128GB Matte Charcoal</p>
+                <p>Precio: $329.999</p>
+            </div>
+            <div class="product__container">
+                <h3>Apple Iphone 11</h3>
+                <img src="../assets/images/Iphone11.jpg" alt="Iphone 11">
+                <p>Apple Iphone 11 128GB black</p>
+                <p>Precio: $1.249.999</p>
+            </div>
+            <div class="product__container">
+                <h3>Apple IPhone 14 </h3>
+                <img src="../assets/images/Iphone14Plus.jpg" alt="Infinito 14">
+                <p>iPhone 14 Plus 128GB Starlight</p>
+                <p>Precio: $2.499.999</p>
+            </div>
+            <div class="product__container">
+                <h3>Motorola Moto G54</h3>
+                <img src="../assets/images/MotoG54.jpg" alt="Motorola G54">
+                <p>Motorola Moto G54 5G 128GB Ambrosia</p>
+                <p>Precio: $449.999</p>
+            </div>
+            <div class="product__container">
+                <h3>Motorola Razr 40</h3>
+                <img src="../assets/images/MotoRazr40.jpg" alt="Moto Razr 40">
+                <p>Motorola Razr 40 Ultra 512GB Negro Infinito</p>
+                <p>Precio: $ 1.599.999</p>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Deberia ir vinculado la grilla y la paguinacion a una base de datos para poder cargar todos los productos-->
+    <nav class="paginacion">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item">  <a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+    <footer class="page__footer" id="footer">
+        <div class="page__footer__info">
+            <div>
+                <h5>Avenida de la Innovación 123, Local 45</h5>
+            </div>
+            <div>
+                <p>Correo Electrónico: info@cellcity.com</p>
+            </div>
+            <div>
+                <h5>Horario de Atención:</h5>
+                <p>Lunes - Viernes: 10:00 AM - 7:00 PM</p>
+                <p>Sábados: 10:00 AM - 5:00 PM</p>
+
+            </div>
+        </div>
+        <div class="page__footer__social">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <img src="../assets/images/facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <img src="../assets/images/instagram.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://whatsapp.com" target="_blank" aria-label="Twitter">
+                <img src="../assets/images/whatsapp.png" alt="Twitter" class="social-icon">
+            </a>
+        </div>
+        <div class="page__footer__copyright">© 2024 Copyright: MyWebsite.com</div>
+    </footer>
+
+    <!-- script con el archivo JS de Boostrap en mi proyecto -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
