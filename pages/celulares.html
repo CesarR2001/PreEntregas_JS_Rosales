@@ -60,7 +60,7 @@
     <section class="product__section"> <!--Seguido de una paginacion para poder ver todos los productos cargados-->
         <h2>Celulares</h2>
         <div class="product__grilla"> 
-            <div class="product__container">
+            <!-- <div class="product__container">
                 <h3>Samsung Galaxy A15</h3>
                 <img src="../assets/images/GalaxyA15.jpg" alt="Samsung Galaxy A15">
                 <p>Galaxy A15 LTE 4GB 128GB Blue Black</p>
@@ -96,7 +96,7 @@
                 <p>Motorola Razr 40 Ultra 512GB Negro Infinito</p>
                 <p>Precio: $ 1.599.999</p>
             </div>
-            
+            -->
         </div>
     </section>
     <!-- Deberia ir vinculado la grilla y la paguinacion a una base de datos para poder cargar todos los productos-->
@@ -115,6 +115,14 @@
             </li>
         </ul>
     </nav>
+
+    <div class="Carrito_compra">
+        <h2>Carrito de Compras</h2>
+        <div id="cart">
+            <!-- Productos en el carrito se mostrarán aquí -->
+        </div>
+        <p id="total">Total: $0</p>
+    </div>
 
     <footer class="page__footer" id="footer">
         <div class="page__footer__info">
@@ -144,7 +152,8 @@
         </div>
         <div class="page__footer__copyright">© 2024 Copyright: MyWebsite.com</div>
     </footer>
-
+    <script src="../js/productos.js"></script>
+    <script src="../js/datos.js"> </script>
     <!-- script con el archivo JS de Boostrap en mi proyecto -->
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

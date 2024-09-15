@@ -284,6 +284,33 @@ header {
   font-size: 1.2rem;
 }
 
+.Carrito_compra {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.Carrito_compra h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#cart {
+  margin-bottom: 20px;
+}
+
+#total {
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
 @media (max-width: 480px) {
   .page__footer__info {
     font-size: 12px; /* Tamaño de fuente aún más pequeño en pantallas muy pequeñas */
