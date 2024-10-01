@@ -1,0 +1,7 @@
+[
+    {"usuario": "CESAR", "contrasena": "CESAR123", "rol": "encargado"},
+    {"usuario": "JUAN", "contrasena": "12345678", "rol": "cliente"},
+    {"usuario": "TOMAS", "contrasena": "12345678", "rol": "cliente"},
+    {"usuario": "DANIELA", "contrasena": "DANIELA123", "rol": "encargado"},
+    {"usuario": "JULIETA", "contrasena": "12345678", "rol": "cliente"}
+]
